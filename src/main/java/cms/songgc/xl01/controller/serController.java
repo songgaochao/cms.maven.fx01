@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class serController {
 
-	@RequestMapping("holler")
+	@RequestMapping("hello")
 	public String toholler() {
 		
 		return "list";
