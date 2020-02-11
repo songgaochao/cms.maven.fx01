@@ -8,8 +8,12 @@
     <setting name="logImpl" value="LOG4J"/>
    </settings>
 	 -->
-	 <!-- 配置分页助手 -->
-	 
+	 <!-- 类性处理器 -->
+	 <typeHandlers>
+	 	<typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"
+	 	javaType="cms.songgc.xl01.entity.Status" />
+	 </typeHandlers>
+	 <!-- 配置分页助手 -->	 
 	 <plugins>
 	  <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
 	 </plugins>
